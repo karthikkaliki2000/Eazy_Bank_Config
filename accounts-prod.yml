@@ -5,7 +5,7 @@ build:
 
 
 accounts:
-  message: "Welcome to Eazy Bank Accounts Related Production Api's"
+  message: "Welcome to Eazy Bank Accounts Related Webhook Api's"
   contactInfo:
     name: "Karthik Kaliki - Product Owner"
     email: "{cipher}02c5f731b78b32e111a6d738266f6257500473a8f1a10d157e864518f20039879df2e3fff640d04601e4467319defcb9"
