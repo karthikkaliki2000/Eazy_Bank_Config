@@ -34,3 +34,9 @@ spring:
         ssl:
           enable: true
           trust: "*" # Trust all hosts (often used in dev)
+twilio:
+  accountSid: ACdf764349e1db274a1062e2b0314e7a68
+  authToken: 25fa89c295316c34828f226cd1e595fa
+  messagingServiceSid: MGcf9f454dc0f0705471a819cfd9e8fd81
+  # The phone number the messages are sent FROM (if using a standard number instead of M.S. SID)
+  fromNumber: +13369758969
