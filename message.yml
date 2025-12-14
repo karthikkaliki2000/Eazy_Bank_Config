@@ -12,28 +12,22 @@ eureka:
 
 spring:
   mail:
-  # 1. Server Connection Details
-  host: smtp.gmail.com # Example: smtp.gmail.com (for Gmail) or smtp.mail.yahoo.com
-  port: 587 # Standard port for TLS (587) or SSL (465)
-  username: karthikkaliki2000@gmail.com # The email address used for authentication (and often the sender 'FROM' address)
-  password: egfu fdak ontd rxyl # IMPORTANT: Use an App Password, not your primary account password (e.g., for Gmail)
-  protocol: smtp # The mail protocol to use (usually 'smtp')
+    host: smtp.gmail.com
+    port: 587
+    username: karthikkaliki2000@gmail.com
+    password: egfu fdak ontd rxyl # Gmail App Password
+    protocol: smtp
+    default-encoding: UTF-8
+    test-connection: true
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls.enable: true
+          starttls.required: false
+          ssl.enable: true
+          ssl.trust: smtp.gmail.com
 
-  # 2. Connection Pool and Encoding
-  default-encoding: UTF-8 # Default encoding for email content
-  # test-connection: true          # Set to true to test connection on startup (optional, useful for debugging)
-
-  # 3. JavaMail Session Properties (for specific SMTP settings)
-  properties:
-    mail:
-      smtp:
-        auth: true # Enable SMTP authentication (requires username/password)
-        starttls:
-          enable: true # Enable STARTTLS for secure communication over port 587
-          required: false # Set to true to enforce TLS connection
-        ssl:
-          enable: true
-          trust: "*" # Trust all hosts (often used in dev)
 twilio:
   accountSid: ACdf764349e1db274a1062e2b0314e7a68
   authToken: 25fa89c295316c34828f226cd1e595fa
