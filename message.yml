@@ -1,0 +1,36 @@
+server:
+  port: 9010
+
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: "http://localhost:8070/eureka/"
+
+spring:
+  mail:
+  # 1. Server Connection Details
+  host: smtp.gmail.com # Example: smtp.gmail.com (for Gmail) or smtp.mail.yahoo.com
+  port: 587 # Standard port for TLS (587) or SSL (465)
+  username: karthikkaliki2000@gmail.com # The email address used for authentication (and often the sender 'FROM' address)
+  password: kmmu ggia ackh lwcr # IMPORTANT: Use an App Password, not your primary account password (e.g., for Gmail)
+  protocol: smtp # The mail protocol to use (usually 'smtp')
+
+  # 2. Connection Pool and Encoding
+  default-encoding: UTF-8 # Default encoding for email content
+  # test-connection: true          # Set to true to test connection on startup (optional, useful for debugging)
+
+  # 3. JavaMail Session Properties (for specific SMTP settings)
+  properties:
+    mail:
+      smtp:
+        auth: true # Enable SMTP authentication (requires username/password)
+        starttls:
+          enable: true # Enable STARTTLS for secure communication over port 587
+          required: false # Set to true to enforce TLS connection
+        ssl:
+          enable: true
+          trust: "*" # Trust all hosts (often used in dev)
