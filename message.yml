@@ -16,7 +16,7 @@ spring:
   host: smtp.gmail.com # Example: smtp.gmail.com (for Gmail) or smtp.mail.yahoo.com
   port: 587 # Standard port for TLS (587) or SSL (465)
   username: karthikkaliki2000@gmail.com # The email address used for authentication (and often the sender 'FROM' address)
-  password: kmmu ggia ackh lwcr # IMPORTANT: Use an App Password, not your primary account password (e.g., for Gmail)
+  password: egfu fdak ontd rxyl # IMPORTANT: Use an App Password, not your primary account password (e.g., for Gmail)
   protocol: smtp # The mail protocol to use (usually 'smtp')
 
   # 2. Connection Pool and Encoding
